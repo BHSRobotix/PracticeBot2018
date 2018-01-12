@@ -62,6 +62,13 @@ public class DriveTrain extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    
+    public void tankDrive(double left, double right) {
+    	differentialDrive.tankDrive(left, right);
+    }
 
+    public void curveDrive(double xSpeed, double zRotation, boolean isQuickTurn) {
+    	differentialDrive.curvatureDrive(xSpeed, zRotation, isQuickTurn);
+    }
 }
 

@@ -43,6 +43,10 @@ public class TankDrive extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+    	// TODO: need to setup joystick in OI and then use it here to get left/right.
+    	double left = 0.0;
+    	double right = 0.0;
+    	Robot.driveTrain.tankDrive(left, right);
     }
 
     // Make this return true when this Command no longer needs to run execute()
